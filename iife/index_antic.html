@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    function user(){
+        let email='dpont@iesebre.com';
+        var password='1234';
+
+        function consoleme(){
+            console.log('Usuari: ' + email)
+        }
+        return {
+            consoleme: consoleme,
+            email: email
+        }
+    }
+
+    var david =user();
+    david.consoleme()
+    console.log(david.email);
+    console.log('HEY!')
+    //IIFE
+    /*(function (){
+        //algun codi aqui
+    })();*/
+</script>
+
+</body>
+</html>
